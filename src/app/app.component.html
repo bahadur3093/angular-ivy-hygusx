@@ -1,0 +1,14 @@
+<div style="border: 1px solid black;padding: 20px">
+  <h1>Parent App Component</h1>
+  <h1>Hello {{ name }}!</h1>
+  <button (click)="changeAngularVersion()">
+    <b>From Parent: </b>Change Angular Version 
+    </button>
+  <button (click)="updateCustomer()"><b>From Parent: </b>Update Customer</button>
+
+  <app-payment-landing [name]="name"></app-payment-landing>
+  <!-- <button [routerLink]="['/payment']">Load Payment page</button> -->
+
+  <!-- <hello [name]="name" [customer]="customer"></hello> -->
+
+</div>
